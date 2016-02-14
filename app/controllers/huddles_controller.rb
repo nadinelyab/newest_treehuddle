@@ -11,6 +11,8 @@ class HuddlesController < ApplicationController
 		@huddle = Huddle.find(params[:id])
 		@participants = @huddle.participants
 		@participant = Participant.new
+		@comments = @huddle.comments
+		@comment = Comment.new
 	end
 
 	def create

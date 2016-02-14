@@ -15,10 +15,18 @@
 	<% end %>
 
 <% if (@huddle.part_max == '' || @participants.size < @huddle.part_max) %>
-	<% binding.pry %>
 	<h2>Join this huddle!</h2>
 	<%= render 'participants/form'%>
 <% else %>
 	<h2>Sorry this huddle already has the maximum number of participants. 
 		Please search for a different huddle</h2>
 <% end%>
+
+<h2>Comments: </h2>
+	<% @comments.each do |comment| %>
+		<h4><%= comment.name %></h4>
+		<p><%= comment.message %></p>
+	<% end %>
+
+<h2>Add a comment!</h2>
+<%= render 'comments/form' %>
