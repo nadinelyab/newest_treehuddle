@@ -1,0 +1,16 @@
+<% if @participant.errors.present? %>
+	<% @participant.errors.full_messages.each do |msg| %>
+		<p><%= msg %></p>
+	<% end %>
+<% end%>
+
+<%= form_for @participant do |f| %>
+	<p>
+		<%= f.label :email %><br>
+		<%= f.email_field :email %>
+	</p>
+	<%= f.hidden_field :huddle_id, value: @huddle.id %>
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
