@@ -1,0 +1,91 @@
+<!-- <h1>Welcome to treeHuddle!</h1>
+
+<% @huddles.each do |huddle| %>
+	<h2>Class: <%= huddle.subject %></h2>
+	<h3>Assignment: <%= huddle.assignment%> </h3>
+	<p>Creator: <%= huddle.creator%> </p>
+	<p>Creator's Email: <%= huddle.email%> </p>
+	<p>Place: <%= huddle.where%> </p>
+	<p>Date:  <%= huddle.date%> </p>
+	<p>Start time: <%= huddle.start_time %> </p>
+	<p>End time: <%= huddle.end_time %> </p>
+	<p>Maximum Number of Participants: <%= huddle.part_max%></p>
+	<p>Message: <%= huddle.message%></p>
+	
+	<%= link_to 'Join this Huddle', huddle_path(huddle) %>
+<% end %> -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Welcome to treeHuddle!
+                    <small>Your one-stop study group finder.</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Project One -->
+        <% @huddles.each do |huddle| %>
+            <div class="row">
+                <div class="col-md-4 portfolio-item">
+                    <h3><%= huddle.subject %></h3>
+                    <h4><%= huddle.assignment%> </h4>
+                    <p><%= huddle.message%></p>
+                    <!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                    <%= link_to 'Join this Huddle', huddle_path(huddle), class: 'btn btn-primary' %>
+                </div>
+            </div>
+        <% end %>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->

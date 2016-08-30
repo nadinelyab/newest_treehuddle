@@ -1,0 +1,32 @@
+<h2>Class: <%= @huddle.subject %></h2>
+<h3>Assignment: <%= @huddle.assignment%> </h3>
+<p>Creator: <%= @huddle.creator%> </p>
+<p>Creator's Email: <%= @huddle.email%> </p>
+<p>Place: <%= @huddle.where%> </p>
+<p>Date:  <%= @huddle.date%> </p>
+<p>Start time: <%= @huddle.start_time %> </p>
+<p>End time: <%= @huddle.end_time %> </p>
+<p>Maximum Number of Participants: <%= @huddle.part_max%></p>
+<p>Message: <%= @huddle.message%></p>
+
+<h2>Current Participants: </h2>
+	<% @participants.each do |participant| %>
+		<p> <%= participant.email %></p>
+	<% end %>
+
+<% if (@huddle.part_max == '' || @participants.size < @huddle.part_max) %>
+	<h2>Join this huddle!</h2>
+	<%= render 'participants/form'%>
+<% else %>
+	<h2>Sorry this huddle already has the maximum number of participants. 
+		Please search for a different huddle</h2>
+<% end%>
+
+<h2>Comments: </h2>
+	<% @comments.each do |comment| %>
+		<h4><%= comment.name %></h4>
+		<p><%= comment.message %></p>
+	<% end %>
+
+<h2>Add a comment!</h2>
+<%= render 'comments/form' %>

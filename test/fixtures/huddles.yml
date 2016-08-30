@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  class: MyString
+  assignment: MyString
+  creator: MyString
+  email: MyString
+  where: MyString
+  time: 2016-02-13 13:24:44
+  date: 2016-02-13
+  message: MyString
+  part_max: 1
+
+two:
+  class: MyString
+  assignment: MyString
+  creator: MyString
+  email: MyString
+  where: MyString
+  time: 2016-02-13 13:24:44
+  date: 2016-02-13
+  message: MyString
+  part_max: 1
