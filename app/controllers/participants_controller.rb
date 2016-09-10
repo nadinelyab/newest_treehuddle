@@ -1,4 +1,5 @@
 class ParticipantsController < ApplicationController
+	before_action :authenticate_user!
 	def create
 		@participant = Participant.new(participant_params)
 

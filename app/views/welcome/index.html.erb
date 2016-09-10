@@ -1,151 +1,108 @@
-<!-- Header -->
-<a name="about"></a>
-<div class="intro-header">
+<header id="top" class="header">
     <div class="container">
-
         <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message">
-                    <h1>treeHuddle</h1>
-                    <h3>Studying in Groups should be Easy.</h3>
-                    <hr class="intro-divider">
-                    <ul class="list-inline intro-social-buttons">
-                        <li>
-                            <a href="https://github.com/nadinelyab/treeHuddle_app" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                    </ul>
+            <div class="col-md-12" style="height: 20px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-vertical-center">
+                    <img src="http://i.imgur.com/vQLPLWf.png?1">
                 </div>
             </div>
         </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.intro-header -->
-
-<!-- Page Content -->
-
-<a  name="services"></a>
-<div class="content-section-a">
-
-    <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+            <div class="col-sm-4 col-md-4">
+                <h3 style="font-size: 24px; text-align: left; font-family: 'Montserrat', sans-serif;">Studying in groups should be Easy</h3>
             </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/ipad.png" alt="">
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.content-section-a -->
-
-<div class="content-section-b">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
-            </div>
-            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                <img class="img-responsive" src="img/dog.png" alt="">
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.content-section-b -->
-
-<div class="content-section-a">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-            </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/phones.png" alt="">
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.content-section-a -->
-
-<a  name="contact"></a>
-<div class="banner">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Connect to Start Bootstrap:</h2>
-            </div>
-            <div class="col-lg-6">
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.banner -->
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+            <div class="col-sm-4 col-md-3 col-md-offset-5">
+                <%= link_to 'Log In', new_user_session_path, class: "btn btn-dark btn-xlarge" %><br>
+                <a class="btn btn-dark btn-xlarge" href="#getting-started"> Getting Started</a>
             </div>
         </div>
     </div>
-</footer>
+</header>
+
+
+
+
+<div id="getting-started" class="services">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12 col-md-12">
+                    <h2 style="text-align: center">
+                    <iframe width='600' height='400' src="http://www.youtube.com/embed/0DxmrCyLdF0" frameborder="0"></iframe>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="http://i.imgur.com/oYtJ5dz.jpg?1" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+                <div id="words">
+              <h1 style="font-size: 72px">Suggest</h1>
+              <p style="font-size: 42px">a class that you would like to teach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="http://i.imgur.com/jPIX4g9.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <strong><h1 style="font-size: 82px; color:black;">Browse</h1></strong>
+              <p style="font-size: 42px; color:black">schools in need near you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="http://i.imgur.com/aAvffYd.jpg?1" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1 style="font-size: 72px">Message</h1>
+              <p style="font-size: 42px">A school through our inbuilt inbox.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" style="padding: 200px">
+            <span class="fa fa-arrow-left fa-2x"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="padding: 200px">
+            <span class="fa fa-arrow-right fa-2x"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div><!-- /.carousel -->
+
+
+
+
+
+<div id="about" class = "about">
+    <div class = "container">
+        <div class="row text-center">
+            <div class="col-md-12">
+            <h1>Why VolunTeach?</h1><br><br>
+            <%= image_tag "info_educ.png", size: "1000x1000", style: "opacity: 0.7;" %>
+            <div style="margin-top: 40px">
+            <a href= "http://www.teach.com" class="btn btn-danger btn-xlarge">Learn More about Teaching!</a>
+            <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-success btn-xlarge" %><br>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

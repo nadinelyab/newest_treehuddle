@@ -1,4 +1,5 @@
 class HuddlesController < ApplicationController
+	before_action :authenticate_user!
 	def new
 		@huddle = Huddle.new
 	end
