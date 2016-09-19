@@ -4,20 +4,14 @@
             <div class="col-md-12" style="height: 20px">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="text-vertical-center">
-                    <img src="http://i.imgur.com/vQLPLWf.png?1">
-                </div>
+        <div class ="row">
+            <div class="col-md-6">
+                <h1 style = "color: white; font-size: 80px;">treeHuddle</h1>
+                <h3 style="color: white; font-size: 24px; text-align: left; font-family: 'Montserrat', sans-serif;">Studying in groups should be easy</h3>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-md-4">
-                <h3 style="font-size: 24px; text-align: left; font-family: 'Montserrat', sans-serif;">Studying in groups should be Easy</h3>
-            </div>
-            <div class="col-sm-4 col-md-3 col-md-offset-5">
+            <div class="col-sm-4 col-md-3 col-md-offset-5" style="float: right">
                 <%= link_to 'Log In', new_user_session_path, class: "btn btn-dark btn-xlarge" %><br>
-                <a class="btn btn-dark btn-xlarge" href="#getting-started"> Getting Started</a>
+                <a class="btn btn-dark btn-xlarge" href="#getting-started"> Get Started</a>
             </div>
         </div>
     </div>
@@ -30,13 +24,19 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-12 col-md-12">
-                    <h2 style="text-align: center">
-                    <iframe width='600' height='400' src="http://www.youtube.com/embed/0DxmrCyLdF0" frameborder="0"></iframe>
+                    <h1 style="text-align: center"> Find out how treeHuddle can make your life easier!</h1>
+                    <iframe align="center" width='600' height='400' src="http://www.youtube.com/embed/0DxmrCyLdF0" frameborder="100"></iframe><br>
+                    <div style = "display: inline-block;float: left;margin: 50px;">
+                        <h2 style="display:inline; margin: 10px">Ready to start?</h2>
+                        <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-success btn-xlarge" %>
+                    </div>
+                    <div style = "display: inline-block;float: right;margin: 50px;">
+                        <h2 style="display: inline; margin: 10px">Already a member?</h2>
+                        <%= link_to 'Log In', new_user_session_path, class: "btn btn-success btn-xlarge" %>
+                    </div>
             </div>
         </div>
 </div>
-
-
 
 
 
@@ -49,31 +49,31 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="http://i.imgur.com/oYtJ5dz.jpg?1" alt="First slide">
+          <img class="first-slide" src="http://az616578.vo.msecnd.net/files/2016/04/28/635974526628760594-309475862_books.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
                 <div id="words">
-              <h1 style="font-size: 72px">Suggest</h1>
-              <p style="font-size: 42px">a class that you would like to teach.</p>
+              <h1 style="font-size: 72px">Browse & Join</h1>
+              <p style="font-size: 42px">existing huddles.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="http://i.imgur.com/jPIX4g9.jpg" alt="Second slide">
+          <img class="second-slide" src="http://static1.squarespace.com/static/523cc9c9e4b05da1410671ef/t/56df8166859fd0fc993e2943/1457488233169/work--black-background--calendar--write_3325628.jpg?format=1500w" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <strong><h1 style="font-size: 82px; color:black;">Browse</h1></strong>
-              <p style="font-size: 42px; color:black">schools in need near you.</p>
+              <strong><h1 style="font-size: 82px; color: white;">Create</h1></strong>
+              <p style="font-size: 42px; color: white">new huddles at convenient times for you.</p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="http://i.imgur.com/aAvffYd.jpg?1" alt="Third slide">
+          <img class="third-slide" src="http://blog.tigerbookstore.com/wp-content/uploads/2013/04/study.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1 style="font-size: 72px">Message</h1>
-              <p style="font-size: 42px">A school through our inbuilt inbox.</p>
+              <h1 style="font-size: 72px">Meet Up</h1>
+              <p style="font-size: 42px">with other students.</p>
             </div>
           </div>
         </div>
@@ -87,22 +87,3 @@
             <span class="sr-only">Next</span>
           </a>
     </div><!-- /.carousel -->
-
-
-
-
-
-<div id="about" class = "about">
-    <div class = "container">
-        <div class="row text-center">
-            <div class="col-md-12">
-            <h1>Why VolunTeach?</h1><br><br>
-            <%= image_tag "info_educ.png", size: "1000x1000", style: "opacity: 0.7;" %>
-            <div style="margin-top: 40px">
-            <a href= "http://www.teach.com" class="btn btn-danger btn-xlarge">Learn More about Teaching!</a>
-            <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-success btn-xlarge" %><br>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
