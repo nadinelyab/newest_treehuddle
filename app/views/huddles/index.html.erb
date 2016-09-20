@@ -27,19 +27,31 @@
             </div>
         </div>
         <!-- /.row -->
-
+        <div class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <%= form_tag(huddles_path, method: "get", html: { class: 'form-inline' }) do %>
+                <%= label_tag(:query, "Search All Proposals:") %>
+                <%= text_field_tag :query, params[@query], placeholder: "Subject, assignment, creator, etc.", input_html: { maxlength: 30 } %>
+                <%= submit_tag "Search", class: "btn btn-default" %>
+                <% end %>
+                <br>
+            </div>
+        </div>
 
         <!-- Project One -->
         <% @huddles.each do |huddle| %>
-            <div class="row">
-                <div class="col-md-4 portfolio-item">
-                    <h3><%= huddle.subject %></h3>
-                    <h4><%= huddle.assignment%> </h4>
-                    <p><%= huddle.message%></p>
-                    <!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-                    <%= link_to 'Join this Huddle', huddle_path(huddle), class: 'btn btn-primary' %>
+            <% if huddle.part_max > huddle.participants.size %>
+                <div class="row">
+                    <div class="col-md-4 portfolio-item">
+                        <h3><%= huddle.subject %></h3>
+                        <h4><%= huddle.assignment%> </h4>
+                        <p><%= huddle.message%></p>
+                        <!-- <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+                        <%= link_to 'Join this Huddle', huddle_path(huddle), class: 'btn btn-primary' %>
+                    </div>
                 </div>
-            </div>
+            <% end %>
         <% end %>
         <!-- /.row -->
 
@@ -74,18 +86,6 @@
             </div>
         </div>
         <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
 
     </div>
     <!-- /.container -->

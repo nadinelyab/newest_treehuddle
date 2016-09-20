@@ -3,13 +3,19 @@
 <head>
   <title>TreeHuddleApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
 <body>
 <%= render 'layouts/alerts' %>
 <%= render 'layouts/nav' %>
 <%= yield %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <footer>
         <hr><div class="container">
             <div class="row">

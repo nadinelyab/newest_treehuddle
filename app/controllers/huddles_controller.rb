@@ -5,7 +5,13 @@ class HuddlesController < ApplicationController
 	end
 
 	def index
-		@huddles = Huddle.all
+		@query = params[:query]
+
+		if @query
+			@huddles = Huddle.advanced_search(@query)
+		else
+			@huddles = Huddle.all
+		end
 	end
 
 	def show
@@ -18,6 +24,8 @@ class HuddlesController < ApplicationController
 
 	def create
 		@huddle = Huddle.new(huddle_params)
+		@huddle.creator = current_user.name
+		@huddle.email = current_user.email
 
 		if @huddle.save
 			redirect_to huddles_path
