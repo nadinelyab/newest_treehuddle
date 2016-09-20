@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
 	before_action :authenticate_user!
 	def create
 		@comment = Comment.new(comment_params)
+		@comment.name = current_user.name
 
 		if @comment.save
 			redirect_to huddle_path(@comment.huddle_id)
